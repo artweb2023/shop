@@ -1,0 +1,38 @@
+.nav_bar__mobile {
+  display: none;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+}
+
+.nav_bar__icon {
+  border: none;
+  height: 2px;
+  width: 25px;
+  background: #ffffff;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+
+.nav_bar__icon::before {
+  display: block;
+  height: 2px;
+  width: 25px;
+  top: 5px;
+  right: 0;
+  background: #ffffff;
+  position: absolute;
+  content: '';
+}
+
+.nav_bar__icon::after {
+  height: 2px;
+  width: 25px;
+  top: 10px;
+  right: 0;
+  background: #ffffff;
+  position: absolute;
+  content: '';
+}

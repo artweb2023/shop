@@ -1,0 +1,148 @@
+.header_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 60px;
+  height: 100%;
+  position: relative;
+}
+
+.show {
+  display: flex !important;
+}
+
+@keyframes slideIn {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
+  }
+}
+
+.nav_bar {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  overflow: hidden;
+  transition: slideIn 0.3s ease;; 
+}
+
+.nav_bar__link {
+  font:
+    700 16px/20px 'Montserrat',
+    sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.nav_bar__link:hover {
+  color: #bbbbbb;
+}
+
+.btn_close {
+  border: none;
+  top: 23px;
+  left: 38px;
+  width: 12px;
+  height: 12px;
+  background: url('../public/Image/Icons/x-lg.svg');
+  position: absolute;
+  cursor: pointer;
+}
+
+.header_user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  min-height: 60px;
+  padding: 0 20px;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.header_logo__icons {
+  width: 50px;
+  height: 50px;
+}
+
+.header_cart {
+  display: flex;
+  align-items: center;
+}
+
+.header_cart__sum {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font:
+    700 22px/22px 'Montserrat',
+    sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 20px 0 0;
+}
+
+.header_cart__currency {
+  background: url('../public/Image/Icons/Ruble.svg');
+  width: 22px;
+  height: 22px;
+}
+
+.header_cart__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  font:
+    300 13px/15px 'Open Sans',
+    sans-serif;
+  color: #ffffff;
+}
+
+.header_cart__icons {
+  display: block;
+  position: relative;
+  background: url('../public/Image/Icons/cart.svg');
+  width: 22px;
+  height: 22px;
+}
+
+.header_cart__count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 10px;
+  bottom: 10px;
+  background: #dc533c;
+  border-radius: 100px;
+  font:
+    700 14px/20px 'Montserrat',
+    sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header_user__login {
+  display: none;
+  text-decoration: none;
+  background: url('../public/Image/Icons/person-circle2.svg');
+  width: 32px;
+  height: 32px;
+}
