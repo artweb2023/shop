@@ -75,7 +75,7 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  background: url('../../public/Image/about-min.jpg');
+  background: url('../../public/Image/about-min.png');
   background-size: cover;
   background-position: center;
 }
@@ -114,40 +114,115 @@ body {
   background-color: #332f2c;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  margin: 50px auto 69px auto;
+  padding: 0 15px;
+  max-width: 938px;
+  max-height: 924px;
+}
+
+.content_about {
+  display: flex;
+  flex-direction: column;
+  min-width: 290px;
+}
+
+.content__image {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px 0 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.content_about__title {
+  font: 700 20px/35px 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 10px 0 20px 0;
+}
+
+.content_about__subtitle {
+  display: flex;
+  font: 700 16px/28px 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 20px 0 30px 0;
+}
+
+.content_about__text {
+  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  color: #717070;
+  margin: 0 0 30px 0;
+}
+
+.content_about__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  padding: 14px 32px;
+  width: 130px;
+  background: #DC533C;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font: 700 16px/20px 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.content_about__button:hover {
+  background: #f17a65;
+  cursor: pointer;
+}
+
+.frame_postion {
+  margin: 100px 0 10px 550px;
+}
+
 .frame {
   display: flex;
   justify-content: center;
   height: 25px;
   width: 200px;
-  background-color: #E0903B;
+  background-color: #e0903b;
   padding: 3px 5px;
   margin: 0 0 10px 0;
   border-radius: 3px;
 }
 
 .frame__text {
-  font: 700 16px/20px 'Montserrat', sans-serif;
-  color: #FFFFFF;
+  font:
+    700 16px/20px 'Montserrat',
+    sans-serif;
+  color: #ffffff;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: #F9F5F1;
+  background: #f9f5f1;
   margin: 200px 0 0 0;
   padding: 0 15px;
 }
 
 .subscription {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   min-width: 240px;
   margin: -106px auto 0 auto;
   background: rgba(17, 17, 17, 0.7);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(17, 17, 17, 0.7);
   padding: 0 20px;
+  margin: 0 0 50px 0;
 }
 
 .subscription-info {
@@ -159,6 +234,7 @@ body {
 
 .subscription-form {
   min-width: 240px;
+  margin: 0 0 50px 0;
 }
 
 .subscription-info__title {
@@ -169,10 +245,22 @@ body {
   margin: 30px 0 0 0;
 }
 
+.subscription-info__title {
+  font:
+    700 20px/30px 'Montserrat',
+    sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f0f4a2;
+  margin: 30px 0 0 0;
+}
+
 .subscription-form__text {
-  font: 400 16px/26px 'Nunito Sans', sans-serif;
-  color: #FFFFFF;
-  margin: 50px 0 16px 0;
+  font:
+    400 16px/26px 'Nunito Sans',
+    sans-serif;
+  color: #ffffff;
+  margin: 0 0 16px 0;
 }
 
 .form {
@@ -190,11 +278,13 @@ body {
   gap: 10px;
   min-width: 240px;
   height: 50px;
-  background: #FFFFFF;
-  border: 1px solid #D1CFCF;
+  background: #ffffff;
+  border: 1px solid #d1cfcf;
   border-radius: 3px;
   margin: 0 0 20px 0;
-  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  font:
+    400 16px/26px 'Nunito Sans',
+    sans-serif;
   color: #717070;
 }
 
@@ -210,11 +300,13 @@ body {
   padding: 14px 32px;
   min-width: 240px;
   gap: 10px;
-  background: #DC533C;
+  background: #dc533c;
   border-radius: 50px;
   border-style: none;
-  font: 700 15px/17px 'Montserrat', sans-serif;
-  color: #FFFFFF;
+  font:
+    700 15px/17px 'Montserrat',
+    sans-serif;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -225,14 +317,14 @@ body {
 .footer-content {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
-  margin: 50px auto 10px auto;
+  min-width: 290px;
+  margin: 0 auto 10px auto;
 }
 
 .footer-about {
   display: flex;
   flex-direction: column;
-  width: 290px;
+  min-width: 290px;
   order: 1;
   margin: 20px 0 0 0;
 }
@@ -243,9 +335,11 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font: 700 16px/26px 'Nunito Sans', sans-serif;
+  font:
+    700 16px/26px 'Nunito Sans',
+    sans-serif;
   color: #111111;
-  width: 290px;
+  width: 100%;
 }
 
 .footer-about__logo {
@@ -255,7 +349,9 @@ body {
 }
 
 .footer-about__text {
-  font: 700 14px/24px 'Nunito Sans', sans-serif;
+  font:
+    700 14px/24px 'Nunito Sans',
+    sans-serif;
   color: #717070;
   margin: 30px 0;
 }
@@ -273,7 +369,10 @@ body {
 }
 
 .footer__title {
-  font: 700 18px/25px 'Montserrat', sans-serif;
+  text-align: center;
+  font:
+    700 18px/25px 'Montserrat',
+    sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #111111;
@@ -283,22 +382,26 @@ body {
 .footer-menu {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: 100%;
 }
 
 .footer-menu__link {
-  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  font:
+    400 16px/26px 'Nunito Sans',
+    sans-serif;
   text-decoration: none;
   color: #717070;
 }
 
 .footer-contact {
-  width: 260px;
+  width: 100%;
   margin: 20px 0 0 0;
 }
 
 .footer-contact__text {
-  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  font:
+    400 16px/26px 'Nunito Sans',
+    sans-serif;
   color: #717070;
   margin: 0 0 10px 0;
 }
@@ -315,12 +418,16 @@ body {
 }
 
 .footer-official__text {
-  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  font:
+    400 16px/26px 'Nunito Sans',
+    sans-serif;
   color: #717070;
 }
 
 .footer-official__link {
-  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  font:
+    400 16px/26px 'Nunito Sans',
+    sans-serif;
   text-decoration: none;
   color: #717070;
   order: -1;
@@ -340,4 +447,136 @@ body {
   .header-promo__button {
     margin: 0 0 0 10px;
   }
+}
+
+@media screen and (min-width: 400px) {
+  .footer-content {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .header {
+    background: url('../../public/Image/about-medium.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background: url('../../public/Image/about-smal.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .subscription {
+    flex-direction: row;
+  }
+
+  .subscription-form {
+    margin: 50px 0;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .footer-about {
+    order: 0;
+    margin: 0;
+  }
+
+  .footer-contact {
+    margin: 0;
+  }
+
+  .footer-menu {
+    margin: 0 30px;
+  }
+
+  .footer__title {
+    text-align: start;
+  }
+
+  .footer-about__link {
+    flex-direction: row;
+  }
+
+  .footer-about__logo {
+    order: -1;
+  }
+
+  .footer-official {
+    flex-direction: row;
+  }
+
+  .footer-official__link {
+    order: 0;
+  }
+}
+
+@media screen and (min-width: 978px) {
+  .content {
+    padding: 0;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .subscription {
+    max-width: 938px;
+    margin: -106px auto 0 auto;
+  }
+
+  .footer-content {
+    max-width: 938px;
+    margin: 50px auto 10px auto;
+  }
+
+  .footer-official {
+    max-width: 938px;
+    width: 100%;
+    margin: 50px auto 10px auto;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    max-height: 650px;
+    background: url('../../public/Image/about-lage.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content_about {
+    width: 40%;
+  }
+
+  .content_about__title {
+    width: 100%;
+  }
+
+  .content__image {
+    width: 50%;
+    order: 1;
+  }
+
 }

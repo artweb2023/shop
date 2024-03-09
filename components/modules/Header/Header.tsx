@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeaderMenu } from '../../elements/Header/HeaderMenu'
-import { HeaderContext } from '../../elements/Header/HeaderContex'
+import { HeaderContent } from '../../elements/Header/HeaderContent'
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         <button className='header-promo__button promo_text'>Получить</button>
       </div>
       <HeaderMenu></HeaderMenu>
-      <HeaderContext></HeaderContext>
+      <HeaderContent></HeaderContent>
     </header>
   )
 }

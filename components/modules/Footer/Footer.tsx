@@ -14,29 +14,32 @@ const Footer = () => {
           <div className='frame'>
             <p className='frame__text'>Подписка</p>
           </div>
-          <div className='subscription-form'>
-            <p className='subscription-form__text'>
-              Получайте эксклюзивные специальные предложения и информацию о
-              наших акциях первыми.
-            </p>
-            <form className='form'>
-              <input
-                className='form__input'
-                type='text'
-                name='email'
-                placeholder='Email address'
-              />
-              <button className='form__button'>Подписаться</button>
-            </form>
-          </div>
+          <h2 className='subscription-info__title'>
+            Получайте последние предложения от нас
+          </h2>
+        </div>
+        <div className='subscription-form'>
+          <p className='subscription-form__text'>
+            Получайте эксклюзивные специальные предложения и информацию о наших
+            акциях первыми.
+          </p>
+          <form className='form'>
+            <input
+              className='form__input'
+              type='text'
+              name='email'
+              placeholder='Email address'
+            />
+            <button className='form__button'>Подписаться</button>
+          </form>
         </div>
       </div>
       <div className='footer-content'>
         <div className='footer-about'>
           <h3 className='footer__title'>О нас</h3>
           <a className='footer-about__link' href='#'>
-            <Image className='footer-about__logo' src={img} alt='Логотип' />
             Доставляем свежее мясо прямо к вам.
+            <Image className='footer-about__logo' src={img} alt='Логотип' />
           </a>
           <p className='footer-about__text'>
             Мы с гордостью предоставляем услугу доставки свежего мяса прямо к

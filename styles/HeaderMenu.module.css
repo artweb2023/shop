@@ -1,8 +1,9 @@
 .header_nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   min-height: 60px;
   height: 100%;
@@ -17,6 +18,7 @@
   from {
     height: 0;
   }
+
   to {
     height: auto;
   }
@@ -27,9 +29,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
   overflow: hidden;
-  transition: slideIn 0.3s ease;; 
+  transition: slideIn 0.3s ease;
+  width: 100%;
+  order: -1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav_bar__link {
@@ -62,9 +67,9 @@
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  width: 100%;
   min-height: 60px;
-  padding: 0 20px;
+  min-width: 20px;
+  margin: 0 20px 0 0;
 }
 
 .header_logo {
@@ -99,6 +104,10 @@
   background: url('../public/Image/Icons/Ruble.svg');
   width: 22px;
   height: 22px;
+}
+
+.header_logo_withMargin {
+  margin: 0 0 0 20px;
 }
 
 .header_cart__link {
@@ -145,4 +154,77 @@
   background: url('../public/Image/Icons/person-circle2.svg');
   width: 32px;
   height: 32px;
+}
+
+@media screen and (min-width: 800px) {
+  .header_nav {
+    flex-wrap: nowrap;
+  }
+
+  .header_logo {
+    margin: 0 0 0 20px;
+  }
+
+  .nav_bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    border-bottom: none;
+    order: 0;
+    width: 580px;
+  }
+}
+
+@media screen and (min-width: 979px) {
+  .header_nav {
+    justify-content: space-evenly;
+  }
+
+  .nav_bar {
+    justify-content: space-between;
+  }
+
+  .header_cart__icons {
+    margin: 0 20px 0 0;
+  }
+
+  .header_cart__sum {
+    display: flex;
+  }
+
+  .header_user {
+    margin: 0 0 0 0;
+  }
+
+  .header_logo {
+    margin: 0;
+  }
+
+  .header_user__login {
+    display: flex;
+    margin: 0 20px 0 0;
+    width: 32px;
+    height: 31px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header_cart {
+    width: 250px;
+  }
+  .header_cart__icons {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .header_nav {
+    width: 1150px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .header_content {
+    padding: 0;
+    margin: 171px auto 0 auto;
+  }
 }

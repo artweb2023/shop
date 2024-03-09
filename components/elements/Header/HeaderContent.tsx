@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from '../../../styles/HeaderContext.module.css'
+import styles from '../../../styles/HeaderContent.module.css'
 
-const HeaderContext = () => {
+const HeaderContent = () => {
   return (
     <div className={styles.header_content}>
       <div className='frame'>
@@ -30,4 +30,4 @@ const HeaderContext = () => {
   )
 }
 
-export { HeaderContext }
+export { HeaderContent }
