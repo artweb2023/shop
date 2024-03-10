@@ -15,9 +15,12 @@ const HeaderMenu = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-      if (window.innerWidth >= 800) {
+      const newWidth = window.innerWidth
+      setWindowWidth(newWidth)
+      if (window.innerWidth >= 800 || (windowWidth >= 800 && newWidth < 800)) {
         setIsMobileMenuOpen(true)
+      } else {
+        setIsMobileMenuOpen(false)
       }
     }
 
@@ -26,7 +29,7 @@ const HeaderMenu = () => {
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [])
+  }, [windowWidth])
 
   return (
     <div className={style.header_nav}>
