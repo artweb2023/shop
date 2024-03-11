@@ -204,6 +204,151 @@ body {
   color: #ffffff;
 }
 
+.quality {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background: #DC533C;
+  padding: 50px 15px 69px;
+}
+
+.quality-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 938px;
+  height: auto;
+}
+
+.quality-row {
+  display: flex;
+  flex-direction: column;
+  min-width: 290px;
+  margin: 0 0 50px 0;
+}
+
+.quality-row__title {
+  font: 700 20px/35px 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #F0F4A2;
+  margin: 10px 0 30px 0;
+}
+
+.quality-row__subtitle {
+  font: 700 16px/28px 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 30px 0;
+}
+
+.quality-row__text {
+  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+}
+
+.quality-row__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  padding: 14px 32px;
+  background-color: #111111;
+  border-radius: 50px;
+  border-style: none;
+  font: 700 16px/20px 'Montserrat', sans-serif;
+  color: #FFFAF4;
+  cursor: pointer;
+}
+
+.quality-row__button:hover {
+  background-color: #332f2c;
+  color: #bbbbbb;
+}
+
+.quality__image {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quality-standart {
+  display: flex;
+  flex-direction: column;
+}
+
+.quality-standart__bucher {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quality-standart__buf {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quality-wrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 290px;
+}
+
+.frame_quality_position {
+  margin: 0 0 30px 0;
+}
+
+.quality-standart__title {
+  font: 700 25px/30px 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #F0F4A2;
+  margin: 30px 0;
+}
+
+.quality-standart__text {
+  font: 400 16px/22px 'Nunito Sans', sans-serif;
+  color: #FFFFFF;
+  margin: 30px 0 10px;
+}
+
+.quality-standart__subtitle {
+  font: 700 18px/24px 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 30px 0 10px;
+}
+
+.quality-standart__list {
+  margin: 0 0 22px 15px;
+  font: 400 16px/26px 'Nunito Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+.quality-standart__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 32px;
+  border-style: none;
+  background: #111111;
+  border-radius: 50px;
+  width: 147px;;
+  font: 700 16px/20px 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.quality-standart__button:hover {
+  background-color: #332f2c;
+  color: #bbbbbb;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -217,12 +362,11 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 240px;
-  margin: -106px auto 0 auto;
+  margin: -106px auto 50px auto;
   background: rgba(17, 17, 17, 0.7);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(17, 17, 17, 0.7);
   padding: 0 20px;
-  margin: 0 0 50px 0;
 }
 
 .subscription-info {
@@ -434,21 +578,6 @@ body {
   margin: 0 0 5px 0;
 }
 
-@media screen and (min-width: 800px) {
-  .header-promo {
-    flex-direction: row;
-    height: 37px;
-  }
-
-  .promo_text {
-    margin: 0;
-  }
-
-  .header-promo__button {
-    margin: 0 0 0 10px;
-  }
-}
-
 @media screen and (min-width: 400px) {
   .footer-content {
     text-align: center;
@@ -462,6 +591,9 @@ body {
     background-position: center;
   }
 
+  .quality{
+    padding: 50px 20px 69px;
+  }
   .content {
     padding: 0 20px;
   }
@@ -476,6 +608,37 @@ body {
     background: url('../../public/Image/about-smal.png');
     background-size: cover;
     background-position: center;
+  }
+  .quality-content{
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 0 50px 0;
+  }
+
+  .quality__image{
+    max-width: 50%;
+    order: 1;
+  }
+  .quality-row{
+    max-width: 469px;
+    max-height: 520px;
+    width: 45%;
+  }
+  .quality-row__title{
+    width: 100%;
+    text-align: center;
+  }
+
+  .quality-row__subtitle{
+    margin: 0 0 30px 0;
+  }
+
+  .quality-row{
+    margin: 0;
+  }
+
+  .quality-row__text{
+    font: 400 18px/ 26px 'Nunito Sans', sans-serif;
   }
 
   .subscription {
@@ -525,6 +688,21 @@ body {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .header-promo {
+    flex-direction: row;
+    height: 37px;
+  }
+
+  .promo_text {
+    margin: 0;
+  }
+
+  .header-promo__button {
+    margin: 0 0 0 10px;
+  }
+}
+
 @media screen and (min-width: 978px) {
   .content {
     padding: 0;
@@ -534,6 +712,13 @@ body {
     padding: 0;
   }
 
+  .quality{
+    padding: 50px 0;
+  }
+
+  .quality-content{
+    margin: 0 auto 100px auto;
+  }
   .subscription {
     max-width: 938px;
     margin: -106px auto 0 auto;
